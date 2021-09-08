@@ -77,7 +77,7 @@ ul,ol{
     list-style: none;
 }
 
-.BGimg{
+.BGimg{ 
     @include bg(2,"","../../img/main_bg.png");
     background-color: #000;
     min-width: 100%;
