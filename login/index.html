@@ -14,6 +14,7 @@
     
 </head>
 <body >
+    <article class="BGimg"></article>
     <header>
         <img src="../img/i_logo_w_nomal.png" alt="logo">
     </header>
@@ -23,24 +24,27 @@
             <div class="loginInputs">
                 <ul>
                     <li>로그인</li>
-                    <li><input :type="input1" placeholder="아이디를 입력하세요"></li>
-                    <li><input :type="input2" placeholder="아이디를 입력하세요"></li>
-                    <li>
-                        <span>비밀번호를 잃어버리셨나요?</span>
-                        <span>비밀번호찾기</span>
+                    <li><input :type="input1" placeholder="이메일 입력"></li>
+                    <li style="position: relative; align-items: center;">
+                        <input :type="input2" placeholder="비밀번호 입력">
+                        <span class="pw_hide">{{hide}}</span>
                     </li>
-                    <li><input type="button" value="로그인"></li>
-                    <li><img src="../img/i_select_small_g.png" alt="로그인정보저장">로그인 정보 저장</li>
+                    <li>
+                        <span style="color: #aaa;">비밀번호를 잊으셨나요?</span>
+                        <span style="cursor: pointer;">비밀번호 찾기</span>
+                    </li>
+                    <li style="background-color: #650aa8; cursor: pointer;"><input type="button" value="로그인" style="cursor: pointer;"></li>
+                    <li style="height: 20px; color: #aaa; margin-bottom: 28px; cursor: pointer;"><img src="../img/i_select_small_g.png" alt="로그인정보저장" style="margin-right: 8px;"> 로그인 정보 저장</li>
                     <li>
                         <span><img src="../img/i_google_b.png" alt="구글">구글로 로그인하기</span>
                         <span><img src="../img/i_facebook_b.png" alt="페이스북">페이스북으로 로그인하기</span>
                     </li>
-                    <li>{{join_msg}}</li>
-                    <li><input type="button" value="회원가입"></li>
+                    <li style="height: 20px; margin: unset; color: #aaa; justify-content: center;">{{join_msg}}</li>
+                    <li style="margin: unset; margin-top: 10px; cursor: pointer;"><input type="button" value="회원가입" style="cursor: pointer;"></li>
                 </ul>
             </div>
         </section>
-    </main>
+    </main>in
     <footer>
         <div>
         <ul class="f_left">
