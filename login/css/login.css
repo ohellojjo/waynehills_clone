@@ -22,4 +22,292 @@ section, label, span, footer, main, aside, header, nav {
 ul, ol {
   list-style: none;
 }
+
+.BGimg {
+  background-image: url("../../img/main_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  min-width: 100%;
+  min-height: 100%;
+  width: 1920px;
+  height: 1080px;
+  position: fixed;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rosybrown;
+}
+
+header > img {
+  width: 220px;
+  height: 98px;
+  position: "";
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.loginBox {
+  width: 440px;
+  height: 620px;
+  position: fixed;
+  top: 50%;
+  margin-top: -300px;
+  left: 50%;
+  margin-left: -220px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.loginBox > div:nth-of-type(1) {
+  width: 100%;
+  height: 30px;
+  position: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginBox > div:nth-of-type(1) > img {
+  width: 28px;
+  height: 28px;
+  position: "";
+  cursor: pointer;
+}
+
+.loginInputs {
+  width: 320px;
+  height: auto;
+  position: "";
+  margin: 0 auto;
+}
+
+.loginInputs > ul {
+  width: 320px;
+  height: auto;
+  position: "";
+  border: 1px solid red;
+}
+
+.loginInputs > ul > li {
+  width: 100%;
+  height: 50px;
+  position: "";
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #767676;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.loginInputs > ul > li img {
+  width: 20px;
+  height: 20px;
+  position: "";
+}
+
+.loginInputs > ul > li input {
+  outline: none;
+  border: 0;
+  height: 28px;
+  width: 93%;
+  margin: 0 auto;
+  background-color: unset;
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.loginInputs > ul > li:nth-of-type(1) {
+  height: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #fff;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.loginInputs > ul > li:nth-of-type(2), .loginInputs > ul > li:nth-of-type(3) {
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.loginInputs > ul > li:nth-of-type(4) {
+  height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginInputs > ul > li:nth-of-type(4) > span:nth-of-type(2) {
+  border-bottom: 2px solid #767676;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(17, 15, 19, 0.9);
+}
+
+footer > div {
+  margin: 0 auto;
+  max-width: 1260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > div > .f_left {
+  width: 500px;
+  height: 100px;
+  position: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > div > .f_left > li {
+  width: auto;
+  height: 30px;
+  position: "";
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 30px;
+}
+
+footer > div > .f_left > li > img {
+  width: 30px;
+  height: 30px;
+  position: "";
+}
+
+footer > div > .f_right {
+  width: auto;
+  height: 100px;
+  position: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > div > .f_right > li {
+  width: auto;
+  height: 30px;
+  position: "";
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 30px;
+  margin-left: 8px;
+}
+
+footer > div > .f_right > li > .sns {
+  width: 30px;
+  height: 30px;
+  position: "";
+}
 /*# sourceMappingURL=login.css.map */

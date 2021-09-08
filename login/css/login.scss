@@ -76,3 +76,125 @@ ul,ol{
     @extend %base;
     list-style: none;
 }
+
+.BGimg{
+    @include bg(2,"","../../img/main_bg.png");
+    background-color: #000;
+    min-width: 100%;
+    min-height: 100%;
+    @include obj(1920px,1080px,fixed);
+}
+header{
+    @include obj(100%,150px,fixed);
+    top: 0;
+    left: 0;
+    background-color: rosybrown;
+    
+    &>img{
+        @include obj(220px,98px,"");  
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+}
+.loginBox{
+    @include obj(440px,620px,fixed);
+    top: 50%;
+    margin-top: -300px;
+    left: 50%; 
+    margin-left: -220px;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    border-radius: 8px;
+    padding: 30px;
+    &>div:nth-of-type(1){
+        @include obj(100%,30px,"");
+        @include flex(flex-end,row,nowrap,center,"","");
+        &>img{
+            @include obj(28px,28px,"");
+            cursor: pointer;
+        }
+    }
+}
+.loginInputs{
+    @include obj(320px,auto,"");
+    margin: 0 auto;
+    &>ul{
+        @include obj(320px,auto,"");
+        border: 1px solid red;
+        &>li{
+            @include obj(100%,50px,"");
+            @include font("noto",400,12px,#767676);
+            @include flex(flex-start,row,nowrap,center,"","");
+            margin-bottom: 16px;
+            & img{
+                @include obj(20px,20px,""); 
+            }
+            & input{
+                outline: none;
+                border: 0;
+                height: 28px;
+                width: 93%;
+                margin: 0 auto;
+                background-color: unset;
+                color: #fff;
+                @include font("noto",400,16px,#fff);
+            }
+            &:nth-of-type(1){
+                height: 40px;
+                @include font("noto",400,26px,#fff);
+                line-height: 40px;
+                margin-bottom: 40px;
+            }
+            &:nth-of-type(2), &:nth-of-type(3){
+                background-color: #333;
+                border-radius: 8px;
+            }
+            &:nth-of-type(4){
+                height: 22px;
+                @include flex(space-between,row,nowrap,center,"","");
+                &>span:nth-of-type(2){
+                    border-bottom: 2px solid #767676;
+                }
+            }
+        }
+    }
+}
+footer{
+    @include obj(100%,100px,fixed);
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #110f13, $alpha: 0.9); 
+    &>div{
+        margin: 0 auto;
+        max-width: 1260px;
+        @include flex(space-around,row,nowrap,center,"","");
+
+    &>.f_left{
+        @include obj(500px,100px,"");
+     
+        @include flex(space-between,row,nowrap,center,"","");
+        &>li{
+            @include obj(auto,30px,"");
+            @include font("noto",500,14px,#aaa);  
+            @include flex(center,row,nowrap,center,"","");
+            line-height: 30px;
+            &>img{
+                @include obj(30px,30px,"");  
+            }
+        }
+    }
+    &>.f_right{
+        @include obj(auto,100px,"");
+        @include flex(space-between,row,nowrap,center,"","");
+        &>li{
+            @include obj(auto,30px,"");
+            @include font("noto",500,14px,#aaa);  
+            @include flex(center,row,nowrap,center,"","");
+            line-height: 30px;
+            margin-left: 8px;
+            &>.sns{
+                @include obj(30px,30px,"");
+            }
+    }
+}
+}
+}
