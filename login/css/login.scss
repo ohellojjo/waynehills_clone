@@ -194,7 +194,6 @@ footer{
 
     &>.f_left{
         @include obj(500px,100px,"");
-     
         @include flex(space-between,row,nowrap,center,"","");
         &>li{
             @include obj(auto,30px,"");
@@ -217,7 +216,7 @@ footer{
             margin-left: 8px;
             &>.sns{
                 @include obj(30px,30px,"");
-            }
+            } 
     }
 }
 }
