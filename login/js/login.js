@@ -1,5 +1,5 @@
 let count=0;
-let login = new Vue({
+let logins = new Vue({
     el:"#loginP",
     data:{
         input1:"text",
@@ -32,7 +32,6 @@ let login = new Vue({
                 this.$refs.pw_border.style.border='1px solid #ff5f0a'
                 this.$refs.pops.style.top="0px"
                 this.msg="입력하신 이메일과 비밀번호가 일치하지 않습니다."
-            
         }
     },
     components:{
