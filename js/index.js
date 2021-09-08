@@ -1,4 +1,4 @@
-
+let no=0;
 let mainpages = new Vue({
     el:"#mainP",
     data:{
@@ -26,14 +26,14 @@ let mainpages = new Vue({
     computed:{
         slide(){
             let ea = document.getElementById("slideImages").children.length;
-            let no=0;
+            
             let timer = setInterval(function(){
                 document.getElementById("slideImages").style.left=-(480*no)+"px"
-                console.log(no)
-                if(no>3){
-                    no==-1;
-                }
                 no++; 
+                console.log(no)
+                if(no>=ea){
+                    no=0;
+                }
             }, 1000)
                
         }

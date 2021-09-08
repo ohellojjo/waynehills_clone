@@ -148,14 +148,14 @@ section{
 }
 .slideImage{
     @include obj(480px,205px,relative);
-    border: 1px solid rebeccapurple;
+    //border: 1px solid rebeccapurple;
     margin: 0 auto;
-    // overflow: hidden;
+    overflow: hidden;
     &>ul{
         @include obj(1440px,205px,absolute);
-        border: 1px solid red;
+        //border: 1px solid red;
         display: flex;
-        transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 2s ease;
         &>li{
             @include obj(480px,205px,"");
             @include flex(center,row,nowrap,center,1,"");
