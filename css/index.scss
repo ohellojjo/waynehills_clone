@@ -104,7 +104,7 @@ header{
 }
 
 
-main{
+section{
     @include obj(100%,auto,"");
     &>.section1{
         margin: 0 auto;
@@ -142,6 +142,24 @@ main{
                 @include flex(center,column,wrap,"",2,center);
                 @include font("",300,90px,#000000de);
                 line-height: 90px;
+            }
+        }
+    }
+}
+.slideImage{
+    @include obj(480px,205px,relative);
+    border: 1px solid rebeccapurple;
+    margin: 0 auto;
+    // overflow: hidden;
+    &>ul{
+        @include obj(1440px,205px,absolute);
+        border: 1px solid red;
+        display: flex;
+        &>li{
+            @include obj(480px,205px,"");
+            @include flex(center,row,nowrap,center,1,"");
+            &>img{
+                @include obj(200px,200px,"");
             }
         }
     }
@@ -303,7 +321,6 @@ footer{
 nav{
     @include obj(100%,100%,absolute);
     z-index: 50;
-    display: none;
     &>.popback{
         @include obj(100%,100%,"");
         background-color: rgba($color: #000000, $alpha: 0.3);

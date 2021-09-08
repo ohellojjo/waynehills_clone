@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon-32x32.png" sizes="32x32">
     <title>Waynehills TTV A.I.</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css?v=<?=$date?>">
-    <script defer src="./js/index.js?v=<?=$date?>"></script>
+    <script src="http://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    <nav id="popup">
-        <div id="popupBox" class="popupBox">
+    <main id="mainP">
+    <nav v-show="popups">
+        <div class="popupBox">
             <span>Terms of Use</span>
             <span>Shutterstock</span>
             <span>
@@ -23,30 +25,36 @@
                 </ul>
             </span>
             <span>
-                <input type="button" value="Got it!" id="closeBtn">
+                <input type="button" value="Got it!" @click="closeBtn">
             </span>
         </div>
-        <div class="popback" id="popback"></div>
+        <div class="popback"  @click="closeBtn"></div>
     </nav>
-    <header>
+    <header >
         <div class="top">
             <a href="./index.html"><img src="./img/logo.png" style="filter: invert();" class="logoimg" alt="Waynehills"></a>
-            <input type="button" value="Sign in" onclick="signIn()">
+            <input type="button" value="Sign in" @click="signIn">
         </div>
     </header>
-    <main>
-        <section class="section1">
+    <section>
+        <article class="section1">
             <div>
                 <ul>
                     <li>Text</li>
                     <li>To</li>
                     <li>Video</li>
                 </ul>
-                <span></span>
+                <span class="slideImage">
+                    <ul>
+                        <li><img src="./img/text_snippet_black_48dp.svg" alt="text"></li>
+                        <li><img src="./img/east_black_48dp.svg" alt="to"></li>
+                        <li><img src="./img/movie_black_48dp.svg" alt="video"></li>
+                    </ul>
+                </span>
             </div>
             <div><h1>The easiest way to make videos</h1></div>
-        </section>
-        <section class="section2">
+        </article>
+        <article class="section2">
             <div></div>
             <div>
                 <span class="list">
@@ -72,15 +80,15 @@
                 </span>
             </div>
             <div></div>
-        </section>
-    </main>
+        </article>
+    </article>
     <footer>
         <div class="powered">
             <div>powered by</div>
             <a href="#"><img src="./img/Shutterstock_logo.svg"></a>
         </div>
         <div>
-            <span><h1 id="popBtn">Terms of Use</h1></span>
+            <span><h1 @click="popBtn">Terms of Use</h1></span>
         <ul>
             <li>B1, E10Dong, 70, Magokjungang 10-ro, Gangseo-gu, Seoul, Republic of Korea</li>
             <li>Founder : John (Yi.su.min)</li>
@@ -88,5 +96,7 @@
         </ul>
     </div>
     </footer>
+</main>
 </body>
+<script src="./js/index.js"></script>
 </html>
