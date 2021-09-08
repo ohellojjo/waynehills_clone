@@ -52,6 +52,25 @@ header > img {
   margin-top: 40px;
 }
 
+.login_popup {
+  width: 440px;
+  height: 70px;
+  position: fixed;
+  top: -70px;
+  left: 50%;
+  margin-left: -220px;
+  background-color: #ff5f0a;
+  border-radius: 0 0 8px 8px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .loginBox {
   width: 440px;
   height: 620px;
@@ -60,7 +79,7 @@ header > img {
   margin-top: -310px;
   left: 50%;
   margin-left: -220px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #111111E6;
   border-radius: 8px;
   padding: 30px;
 }
@@ -267,9 +286,8 @@ footer > div > .f_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
@@ -301,6 +319,10 @@ footer > div > .f_left > li {
       -ms-flex-align: center;
           align-items: center;
   line-height: 30px;
+}
+
+footer > div > .f_left > li:last-of-type {
+  font-size: 12px;
 }
 
 footer > div > .f_left > li > img {
