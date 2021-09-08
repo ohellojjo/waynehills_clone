@@ -104,6 +104,8 @@ section > .section1 > div:first-of-type {
 }
 
 section > .section1 > div:first-of-type > ul {
+  width: 480px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,6 +119,7 @@ section > .section1 > div:first-of-type > ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 section > .section1 > div:first-of-type > ul > li {
@@ -129,7 +132,6 @@ section > .section1 > div:first-of-type > ul > li {
   font-size: "";
   color: #000000de;
   opacity: 0.7;
-  border-bottom: 1px solid #e2e2e2;
   cursor: pointer;
 }
 
