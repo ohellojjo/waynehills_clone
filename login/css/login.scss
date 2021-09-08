@@ -95,13 +95,25 @@ header{
         margin-top: 40px;
     }
 }
+.login_popup{
+    @include obj(440px,70px,fixed);
+    top:-70px;
+    left: 50%;
+    margin-left: -220px;
+    background-color: #ff5f0a;
+    border-radius: 0 0 8px 8px;
+    @include font("noto",400,16px,#fff);
+    text-align: center;
+    line-height: 70px;
+    transition: all 1s ease;
+}
 .loginBox{
     @include obj(440px,620px,fixed);
     top: 50%;
     margin-top: -310px;
     left: 50%; 
     margin-left: -220px;
-    background-color: rgba($color: #000000, $alpha: 0.8);
+    background-color: #111111E6;
     border-radius: 8px;
     padding: 30px;
     &>div:nth-of-type(1){
@@ -182,6 +194,7 @@ header{
     right:20px;
     cursor: pointer;
 }
+
 footer{
     @include obj(100%,100px,fixed);
     bottom: 0;
@@ -194,12 +207,15 @@ footer{
 
     &>.f_left{
         @include obj(500px,100px,"");
-        @include flex(space-between,row,nowrap,center,"","");
+        @include flex(space-around,row,nowrap,center,"","");
         &>li{
             @include obj(auto,30px,"");
             @include font("noto",500,14px,#aaa);  
             @include flex(center,row,nowrap,center,"","");
             line-height: 30px;
+            &:last-of-type{
+                font-size: 12px;
+            }
             &>img{
                 @include obj(30px,30px,"");  
             }
