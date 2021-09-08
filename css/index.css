@@ -183,6 +183,8 @@ section > .section1 > div:last-of-type > h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .slideImage > ul > li {

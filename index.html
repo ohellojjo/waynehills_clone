@@ -46,7 +46,8 @@
                     <li>Video</li>
                 </ul>
                 <span class="slideImage">
-                    <ul>
+                    {{slide}}
+                    <ul id="slideImages">
                         <li><img src="./img/text_snippet_black_48dp.svg" alt="text"></li>
                         <li><img src="./img/east_black_48dp.svg" alt="to"></li>
                         <li><img src="./img/movie_black_48dp.svg" alt="video"></li>
@@ -59,10 +60,12 @@
             <div></div>
             <div>
                 <span class="list">
-                    <ul class="script">
+                    <transition name="animation">
+                    <ul class="script" @click="script">
                         <li>1</li>
                         <li>Scripting</li>
                     </ul>
+                    </transition>   
                     <label class="vertical"></label>
                     <ul class="textbox">
                         <li><textarea placeholder="Put your script here 500~5,000 letters."></textarea></li>

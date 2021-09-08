@@ -155,6 +155,7 @@ section{
         @include obj(1440px,205px,absolute);
         border: 1px solid red;
         display: flex;
+        transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
         &>li{
             @include obj(480px,205px,"");
             @include flex(center,row,nowrap,center,1,"");
