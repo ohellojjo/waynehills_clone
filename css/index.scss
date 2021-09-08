@@ -76,3 +76,29 @@ ul,ol{
     @extend %base;
     list-style: none;
 }
+//header
+header{
+    margin: 0 auto;
+    max-width: 1260px;
+    @include obj(100%,58px,"");
+    padding: 8px 10px 8px 10px;
+    box-shadow: 0.5px 1px 3px rgba($color: #000000, $alpha: 0.6);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.top{
+    @include flex(space-between,row,nowrap,center,"","");
+    &>input{
+        @include obj(76px,36px,"");
+        background-color: #000000;
+        border-radius: 5px;
+        outline: none;
+        border: 0;
+        color: #fff;
+        @include font("roboto",600,14px,#fff);
+        cursor: pointer;
+    }
+}
+.logoimg{
+    width: 75%;
+}
