@@ -18,7 +18,9 @@
             <img src="../img/i_logo_w_nomal.png" alt="logo">
         </header>
         <section id="loginP">
-        <nav class="login_popup" ref="pops">{{msg}}</nav>
+            <transition name="slide">
+        <nav class="login_popup" ref="pops" v-if=show>{{msg}}</nav>
+        </transition>
         <article class="loginBox">
             <div><img src="../img/i_x_g.png" alt="closeBtn" @click=closeBtn></div>
             <div class="loginInputs">

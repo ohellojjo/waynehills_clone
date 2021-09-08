@@ -95,9 +95,18 @@ header{
         margin-top: 40px;
     }
 }
+.slide-enter, .slide-leave-to{
+    transform: translateY(-70px);
+}
+.slide-enter-to, .slide-leave{
+    transform: translateY(0px);
+}
+.slide-enter-active, .slide-leave-active{
+    transition: all 3s ease;
+}
 .login_popup{
     @include obj(440px,70px,fixed);
-    top:-70px;
+   // top:-70px;
     left: 50%;
     margin-left: -220px;
     background-color: #ff5f0a;
@@ -105,7 +114,7 @@ header{
     @include font("noto",400,16px,#fff);
     text-align: center;
     line-height: 70px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .loginBox{
     @include obj(440px,620px,fixed);
@@ -206,10 +215,11 @@ footer{
         @include flex(space-around,row,nowrap,center,"","");
 
     &>.f_left{
-        @include obj(500px,100px,"");
+        max-width: 500px;
+        @include obj(100%,100px,"");
         @include flex(space-around,row,nowrap,center,"","");
         &>li{
-            @include obj(auto,30px,"");
+            @include obj("",30px,"");
             @include font("noto",500,14px,#aaa);  
             @include flex(center,row,nowrap,center,"","");
             line-height: 30px;
@@ -229,7 +239,7 @@ footer{
             @include font("noto",500,14px,#aaa);  
             @include flex(center,row,nowrap,center,"","");
             line-height: 30px;
-            margin-left: 8px;
+            margin-left: 5px;
             &>.sns{
                 @include obj(30px,30px,"");
             } 

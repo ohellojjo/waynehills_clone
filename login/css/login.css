@@ -52,11 +52,25 @@ header > img {
   margin-top: 40px;
 }
 
+.slide-enter, .slide-leave-to {
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+}
+
+.slide-enter-to, .slide-leave {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.slide-enter-active, .slide-leave-active {
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
 .login_popup {
   width: 440px;
   height: 70px;
   position: fixed;
-  top: -70px;
   left: 50%;
   margin-left: -220px;
   background-color: #ff5f0a;
@@ -67,8 +81,8 @@ header > img {
   color: #fff;
   text-align: center;
   line-height: 70px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .loginBox {
@@ -280,7 +294,8 @@ footer > div {
 }
 
 footer > div > .f_left {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   height: 100px;
   position: "";
   display: -webkit-box;
@@ -298,7 +313,7 @@ footer > div > .f_left {
 }
 
 footer > div > .f_left > li {
-  width: auto;
+  width: "";
   height: 30px;
   position: "";
   font-family: 'Noto Sans KR', sans-serif;
@@ -372,7 +387,7 @@ footer > div > .f_right > li {
       -ms-flex-align: center;
           align-items: center;
   line-height: 30px;
-  margin-left: 8px;
+  margin-left: 5px;
 }
 
 footer > div > .f_right > li > .sns {

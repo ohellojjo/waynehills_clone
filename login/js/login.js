@@ -8,7 +8,8 @@ let logins = new Vue({
         hide:"표시",
         email:"",
         pw:"",
-        msg:""
+        msg:"",
+        show:false,
     },
     methods:{
         closeBtn(){
@@ -28,10 +29,18 @@ let logins = new Vue({
         },
         loginBtn(){
             
+            if(!this.email || !this.pw){
                 this.$refs.email_border.style.border='1px solid #ff5f0a'
                 this.$refs.pw_border.style.border='1px solid #ff5f0a'
-                this.$refs.pops.style.top="0px"
                 this.msg="입력하신 이메일과 비밀번호가 일치하지 않습니다."
+                this.show=true;
+            }
+            else{
+                this.$refs.email_border.style.border='1px solid #ff5f0a'
+                this.$refs.pw_border.style.border='1px solid #ff5f0a'
+                this.msg="입력하신 이메일과 비밀번호가 일치하지 않습니다."
+                this.show=true;
+            }
         }
     },
     components:{

@@ -128,6 +128,7 @@ section{
                     cursor: pointer;
                     &:nth-of-type(1){
                         border-bottom: 3px solid #c7b9b4; 
+                        
                     }
                 }
 
@@ -155,7 +156,7 @@ section{
         @include obj(1440px,205px,absolute);
         //border: 1px solid red;
         display: flex;
-        transition: all 2s ease;
+        transition: all 1s ease;
         &>li{
             @include obj(480px,205px,"");
             @include flex(center,row,nowrap,center,1,"");

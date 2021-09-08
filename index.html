@@ -40,10 +40,10 @@
     <section>
         <article class="section1">
             <div>
-                <ul>
-                    <li>Text</li>
-                    <li>To</li>
-                    <li>Video</li>
+                <ul id="slideText">
+                    <li @click="text1">Text</li>
+                    <li @click="text2">To</li>
+                    <li @click="text3">Video</li>
                 </ul>
                 <span class="slideImage">
                     {{slide}}
@@ -60,16 +60,15 @@
             <div></div>
             <div>
                 <span class="list">
-                    <transition name="animation">
-                    <ul class="script" @click="script">
+                    <ul class="script">
                         <li>1</li>
                         <li>Scripting</li>
-                    </ul>
-                    </transition>   
+                    </ul> 
                     <label class="vertical"></label>
                     <ul class="textbox">
-                        <li><textarea placeholder="Put your script here 500~5,000 letters."></textarea></li>
-                        <li><span> 0 letters</span></li>
+                        {{inputText}}
+                        <li><textarea placeholder="Put your script here 500~5,000 letters." v-model="text"></textarea></li>
+                        <li><span>{{length}} letters</span></li>
                         <li><input type="button" value="Convert" disabled></li>
                     </ul>
                     <ul class="Matching">
