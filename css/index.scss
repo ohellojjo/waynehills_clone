@@ -102,3 +102,262 @@ header{
 .logoimg{
     width: 75%;
 }
+
+
+main{
+    @include obj(100%,auto,"");
+    &>.section1{
+        margin: 0 auto;
+        max-width: 1260px;
+        @include obj(100%,100%,"");
+        min-height: 250px;
+        display: flex;
+        &>div:first-of-type{
+            max-width: 560px;
+            @include obj(100%,250px,"");
+            border-right: 1px solid rgb(226, 226, 226);
+            &>ul{
+                @include flex(center,row,nowrap,center,"","");
+                &>li{
+                    @include obj(160px,48px,""); 
+                    text-align: center;
+                    line-height: 48px;
+                    @include font("",500,"",#000000de);
+                    opacity: 0.7;
+                    border-bottom: 1px solid rgb(226, 226, 226);
+                    cursor: pointer;
+                    &:nth-of-type(1){
+                        border-bottom: 3px solid #c7b9b4; 
+                    }
+                }
+
+            }
+            
+        }
+        &>div:last-of-type{
+            max-width: 700px;
+            @include obj(100%,auto,"");
+            padding: 30px;
+            &>h1{
+                @include flex(center,column,wrap,"",2,center);
+                @include font("",300,90px,#000000de);
+                line-height: 90px;
+            }
+        }
+    }
+}
+.section2{
+    @include obj(100%,auto,""); 
+    &>div:first-of-type {
+        @include obj(100%,32px,""); 
+        background-color: #000;
+        border-radius: 100% 100% 0 0;
+    }
+    &>div:last-of-type {
+        @include obj(100%,32px,""); 
+        background-color: #000;
+        border-radius: 0 0 100% 100%;
+    }
+    &>div:nth-of-type(2){
+        @include obj(100%,auto,""); 
+        background-color: #000;
+        &>.list{
+        max-width: 1260px;
+        margin: 0 auto;
+        @include obj(100%,auto,""); 
+        background-color: rgba($color: #fff, $alpha: 0.05); 
+        
+        
+        }
+    }
+}
+.script, .Matching, .encodings{
+    @include obj(100%,72px,""); 
+    @include flex(flex-start,row,nowrap,center,"","");
+    padding: 24px;
+    cursor: pointer;
+    &>li:first-of-type{
+        @include obj(24px,24px,"");  
+        border-radius: 24px;
+        background-color: #d7ccc8;;
+        text-align: center;
+        line-height: 24px;
+    }
+    &>li:last-of-type{
+        display: block;
+        margin-left: 10px;
+        @include font("noto",500,14px,#fff);
+    }
+    &:hover{
+        background-color: rgba($color: #fff, $alpha: 0.05); 
+    }
+}
+.Matching, .encodings{
+    &>li:last-of-type{
+        @include font("noto",400,12px,#ffffffb3); 
+    }
+}
+.vertical{
+    @include obj(10px,430px,absolute); 
+   border-left: 1px solid #ffffff1f;
+   left: 36px;
+   margin-top: -15px
+}
+.vertical2{
+    @include obj(10px,30px,absolute); 
+   border-left: 1px solid #ffffff1f;
+   left: 36px;
+   margin-top: -15px
+}
+.textbox{
+    @include obj(100%,auto,""); 
+    padding: 0 24px 0 24px;
+    @include flex(center,column,nowrap,flex-end,"","");
+    &>li{
+        @include obj(97%,auto,"");  
+        &>textarea{
+            min-height: 320px;
+            @include obj(100%,100%,"");
+            resize: none;
+            overflow-y: auto;
+            outline: none;
+            padding: 32px;
+            &::placeholder{
+                text-align: center;
+            }
+        }
+        &:nth-of-type(2){
+            @include flex(flex-end,row,nowrap,center,"","");
+            &>span{
+                @include font("noto",400,12px,#fff);
+                margin: 8px 8px 0 0 ;
+            }
+        }
+        &:nth-of-type(3){
+            @include flex(flex-end,row,nowrap,center,"","");
+            &>input{
+                @include obj(81px,36px,"");
+                background-color: #949494;
+                outline: none;
+                border: 0;
+                border-radius: 5px;
+                @include font("roboto",600,14px,#ffffff4d);
+                margin: 8px 8px 8px 0 ;
+            }
+        }
+    }
+    
+}
+
+//footer
+footer{
+    @include obj(100%,auto,"");
+    &>div:nth-of-type(2){
+        border-top: 1px solid rgb(226, 226, 226);
+        margin: 0 auto;
+        @include obj(100%,116px,"");
+        display: flex;
+        @include flex(center,row,nowrap,center,"","");
+        &>span{
+            max-width: 630px;
+            @include obj(100%,116px,"");
+            padding-top: 10px;
+            cursor: pointer;
+            &>h1{
+                display: inline-block;
+                @include font("noto",400,12px,#000000de);
+                border-bottom: 3px solid #000;
+            }
+           
+        }
+        &>ul{
+            max-width: 630px;
+            @include obj(100%,116px,"");
+            padding-top: 10px;
+            &>li{
+                @include obj(100%,20px,"");
+                margin-bottom: 12px;
+                @include font("noto",400,12px,#000000de);
+                line-height: 20px;
+            }
+        }
+    }
+}
+.powered{
+    margin: 0 auto;
+    max-width: 1260px;
+    @include obj(100%,auto,"");
+    @include flex(center,column,nowrap,center,"","");
+    &>div{
+        @include obj(100%,40px,"");
+        @include font("noto",400,26px,#000000de);
+        text-align: center;
+        line-height: 40px;
+    }
+    &>a>img{
+        @include obj(350px,50px,"");
+        margin: 20px 0 20px 0;
+    }
+}
+//popup layer
+nav{
+    @include obj(100%,100%,absolute);
+    z-index: 50;
+    display: none;
+    &>.popback{
+        @include obj(100%,100%,"");
+        background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+    &>.popupBox{
+        z-index: 100 !important;
+        @include obj(80%,auto,absolute);
+        background-color: #fff;
+        border-radius: 5px;
+        left: 50%;
+        margin-left: -40%;
+        top: 50%;
+        padding: 24px;
+        &>span:nth-of-type(1){
+            @include obj(100%,32px,"");
+            @include font("noto",500,20px,#000000de);  
+            line-height: 32px;
+            margin-bottom: 16px;
+        }
+        &>span:nth-of-type(2){
+            @include obj(100%,28px,"");
+            @include font("noto",400,16px,#000000de);  
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+        &>span:nth-of-type(3){
+            @include obj(100%,auto,"");
+            &>ul{
+                @include obj(100%,auto,"");
+                &>li{
+                    @include obj(100%,"","");
+                    @include font("noto",400,12px,#000000de); 
+                    @include flex(center,column,wrap,flex-start,"","");
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &>span:nth-of-type(4){
+            @include obj(100%,auto,"");
+            @include flex(flex-end,row,wrap,center,"","");
+            &>input{
+                @include obj(70px,52px,"");
+                background-color: #e7e6e6;
+                border-radius: 5px;
+                outline: none;
+                border: 0;
+                @include font("roboto",500,14px,#000000de);
+                cursor: pointer;
+                
+                &:hover{
+                    background-color: #f8f5f4;
+                }
+            }
+        }
+    }
+}
