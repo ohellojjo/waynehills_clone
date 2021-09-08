@@ -42,14 +42,13 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rosybrown;
 }
 
 header > img {
   width: 220px;
   height: 98px;
   position: "";
-  margin-left: 50px;
+  margin-left: 60px;
   margin-top: 40px;
 }
 
@@ -58,10 +57,10 @@ header > img {
   height: 620px;
   position: fixed;
   top: 50%;
-  margin-top: -300px;
+  margin-top: -310px;
   left: 50%;
   margin-left: -220px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   padding: 30px;
 }
@@ -103,7 +102,6 @@ header > img {
   width: 320px;
   height: auto;
   position: "";
-  border: 1px solid red;
 }
 
 .loginInputs > ul > li {
@@ -128,6 +126,7 @@ header > img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 16px;
+  border-radius: 8px;
 }
 
 .loginInputs > ul > li img {
@@ -143,7 +142,6 @@ header > img {
   width: 93%;
   margin: 0 auto;
   background-color: unset;
-  color: #fff;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -160,13 +158,14 @@ header > img {
   margin-bottom: 40px;
 }
 
-.loginInputs > ul > li:nth-of-type(2), .loginInputs > ul > li:nth-of-type(3) {
+.loginInputs > ul > li:nth-of-type(2), .loginInputs > ul > li:nth-of-type(3), .loginInputs > ul > li:nth-of-type(9) {
   background-color: #333;
-  border-radius: 8px;
 }
 
 .loginInputs > ul > li:nth-of-type(4) {
-  height: 22px;
+  height: 21px;
+  line-height: 21px;
+  margin-bottom: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,6 +183,55 @@ header > img {
 
 .loginInputs > ul > li:nth-of-type(4) > span:nth-of-type(2) {
   border-bottom: 2px solid #767676;
+}
+
+.loginInputs > ul > li:nth-of-type(7) {
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+}
+
+.loginInputs > ul > li:nth-of-type(7) > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.loginInputs > ul > li:nth-of-type(7) > span:last-of-type {
+  border-left: 1px solid #767676;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.pw_hide {
+  width: 53px;
+  height: 40px;
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #aaa;
+  text-align: center;
+  line-height: 40px;
+  right: 20px;
+  cursor: pointer;
 }
 
 footer {

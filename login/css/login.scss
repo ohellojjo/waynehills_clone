@@ -88,21 +88,20 @@ header{
     @include obj(100%,150px,fixed);
     top: 0;
     left: 0;
-    background-color: rosybrown;
     
     &>img{
         @include obj(220px,98px,"");  
-        margin-left: 50px;
+        margin-left: 60px;
         margin-top: 40px;
     }
 }
 .loginBox{
     @include obj(440px,620px,fixed);
     top: 50%;
-    margin-top: -300px;
+    margin-top: -310px;
     left: 50%; 
     margin-left: -220px;
-    background-color: rgba($color: #000000, $alpha: 0.9);
+    background-color: rgba($color: #000000, $alpha: 0.8);
     border-radius: 8px;
     padding: 30px;
     &>div:nth-of-type(1){
@@ -119,12 +118,12 @@ header{
     margin: 0 auto;
     &>ul{
         @include obj(320px,auto,"");
-        border: 1px solid red;
         &>li{
             @include obj(100%,50px,"");
             @include font("noto",400,12px,#767676);
             @include flex(flex-start,row,nowrap,center,"","");
             margin-bottom: 16px;
+            border-radius: 8px;
             & img{
                 @include obj(20px,20px,""); 
             }
@@ -135,8 +134,8 @@ header{
                 width: 93%;
                 margin: 0 auto;
                 background-color: unset;
-                color: #fff;
                 @include font("noto",400,16px,#fff);
+                
             }
             &:nth-of-type(1){
                 height: 40px;
@@ -144,19 +143,44 @@ header{
                 line-height: 40px;
                 margin-bottom: 40px;
             }
-            &:nth-of-type(2), &:nth-of-type(3){
-                background-color: #333;
-                border-radius: 8px;
+            &:nth-of-type(2), &:nth-of-type(3) , &:nth-of-type(9){
+                background-color: #333;   
             }
             &:nth-of-type(4){
-                height: 22px;
+                height: 21px;
+                line-height: 21px;
+                margin-bottom: 22px;
                 @include flex(space-between,row,nowrap,center,"","");
                 &>span:nth-of-type(2){
                     border-bottom: 2px solid #767676;
                 }
             }
+            &:nth-of-type(7){
+                height: 20px; 
+                @include flex(center,row,nowrap,center,"","");
+                margin-bottom: 48px;
+                &>span{
+                    display: flex;
+                    align-items: center;
+                    padding-right: 20px;
+                    cursor: pointer;
+                    &:last-of-type{
+                        border-left: 1px solid #767676;
+                        padding-left: 20px;
+                        padding-right: 0;
+                    }
+                }
+            }
         }
     }
+}
+.pw_hide{
+    @include obj(53px,40px,absolute);
+    @include font("noto",400,16px,#aaa); 
+    text-align: center;
+    line-height: 40px;
+    right:20px;
+    cursor: pointer;
 }
 footer{
     @include obj(100%,100px,fixed);
