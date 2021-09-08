@@ -3,7 +3,8 @@ let login = new Vue({
     data:{
         input1:"text",
         input2:"password",
-        join_msg:"회원가입을 하고 영상을 제작해 보세요!",
+        join_msg:"회원가입하고 영상을 제작해 보세요!",
+        hide:"표시"
     },
     methods:{
         closeBtn(){
