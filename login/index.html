@@ -1,0 +1,63 @@
+<?php
+   $v = date("YmdHis");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon-32x32.png" sizes="32x32">
+    <title>Waynehills TTV A.I.</title>
+    <link rel="stylesheet" type="text/css" href="./css/login.css?v=<?=$date?>">
+    <script src="http://cdn.jsdelivr.net/npm/vue"></script>
+    
+</head>
+<body >
+    <header>
+        <img src="../img/i_logo_w_nomal.png" alt="logo">
+    </header>
+    <main id="loginP">
+        <section class="loginBox">
+            <div><img src="../img/i_x_g.png" alt="closeBtn" @click=closeBtn></div>
+            <div class="loginInputs">
+                <ul>
+                    <li>로그인</li>
+                    <li><input :type="input1" placeholder="아이디를 입력하세요"></li>
+                    <li><input :type="input2" placeholder="아이디를 입력하세요"></li>
+                    <li>
+                        <span>비밀번호를 잃어버리셨나요?</span>
+                        <span>비밀번호찾기</span>
+                    </li>
+                    <li><input type="button" value="로그인"></li>
+                    <li><img src="../img/i_select_small_g.png" alt="로그인정보저장">로그인 정보 저장</li>
+                    <li>
+                        <span><img src="../img/i_google_b.png" alt="구글">구글로 로그인하기</span>
+                        <span><img src="../img/i_facebook_b.png" alt="페이스북">페이스북으로 로그인하기</span>
+                    </li>
+                    <li>{{join_msg}}</li>
+                    <li><input type="button" value="회원가입"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+        <ul class="f_left">
+            <li style="font-size: 16px; color: #fff;">한국어</li>
+            <li>자주묻는질문</li>
+            <li>이용약관</li>
+            <li><img src="../img/i_copyright.png" alt="copyright">Copyright all rights reserved.</li>
+        </ul>
+        <ul class="f_right">
+            <li ><img src="../img/i_logo_footer.png" alt="waynhills_logo" style="width: 200px; height: auto; margin-right: 10px;"></li>
+            <li><img src="../img/i_sns_facebook.png" alt="facebook" class="sns"></li>
+            <li><img src="../img/i_sns_youtube.png" alt="youtube" class="sns"></li>
+            <li><img src="../img/i_sns_instagram.png" alt="instagram" class="sns"></li>
+        </ul>
+    </div>
+    </footer>
+   
+</body>
+<script src="./js/login.js?v=<?=$date?>"></script>
+</html>
