@@ -1,4 +1,4 @@
-let login = new Vue({
+let logins = new Vue({
     el:"#loginP",
     data:{
         input1:"text",
